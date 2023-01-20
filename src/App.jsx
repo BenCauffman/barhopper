@@ -1,11 +1,10 @@
-const { createRoot } = require("react-dom/cjs/react-dom.production.min")
+import { createRoot } from "react-dom";
 
 const App = () => {
-  return (
-    <div>Hello World</div>
-  )
-}
+  console.log('hi')
+  return <div>Hello World</div>;
+};
 
-const root =createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById("root"));
 
-root.render(<App/>);
+root.render(<App />);
